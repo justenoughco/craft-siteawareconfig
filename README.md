@@ -20,9 +20,9 @@ Example usecases:
 ### Why use this instead of
 
 * **Logic in my templates?** That works, but it's ugly as sin, and quickly gets repetitive. As much as possible, templates should just format and display data that is passed from PHP
-* **A global?** You could, but this is much faster (no DB / fields overhead), more lightweight and allows for both defaults and sharing values between sites / groups of sites if required 
+* **A Craft global?** You could, but this is much faster (no DB / fields overhead), more lightweight and allows for both defaults and sharing values between sites / groups of sites if required
 * **Environment variables?** You should use Environment Variables for config whenever you can! But with multi-site installs they're often not enough on their own. You can (and should) use `App::env()` inside your `config/siteware.php` to set values that belong in the environment (like API keys) that you may need to maintain per-site.
-* **ustom key in `config/general.php`?** For basic use cases, this works fine, but again setting defaults / fallback values gets complex quickly.
+* **Custom key in `config/general.php`?** For basic use cases, this works fine, but again setting defaults / fallback values gets complex quickly.
 
 
 ## How?

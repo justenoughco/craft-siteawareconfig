@@ -25,7 +25,7 @@ declare(strict_types=1);
  */
 
 return [
-    // all environments
+    // // all environments
     // '*' => [
     //     'staticValue' => 'I am the same for every site',
     //     'myCustomConfigKey' => [
