@@ -1,0 +1,56 @@
+{
+    "name": "justenough/craft-siteawareconfig",
+    "description": "Set & retrieve site-aware config values",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "Site Aware config"
+    ],
+    "support": {
+        "docs": "https://github.com/justenoughco/craft-siteawareconfig/blob/master/README.md",
+        "issues": "https://github.com/justenoughco/craft-siteawareconfig/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Just Enough Consulting",
+            "homepage": "https://justenough.co/"
+        }
+    ],
+    "require-dev": {
+        "craftcms/cms": "^3.6",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "phpstan/phpstan": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {
+          "justenough\\siteawareconfig\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Site Aware Config",
+        "handle": "site-aware-config",
+        "developer": "Just Enough Consulting",
+        "developerUrl": "https://justenough.co/",
+        "documentationUrl": "https://github.com/justenoughco/craft-siteawareconfig/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/justenoughco/craft-siteawareconfig/master/CHANGELOG.md",
+        "components": {
+            "config": "justenough\\siteawareconfig\\services\\Config"
+        },
+        "class": "justenough\\siteawareconfig\\Plugin"
+    },
+    "scripts": {
+        "phpstan": "vendor/bin/phpstan analyse",
+        "cs": "vendor/bin/php-cs-fixer fix src --allow-risky=yes"
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
+        }
+    }
+}
