@@ -2,7 +2,6 @@
     "name": "justenough/craft-siteawareconfig",
     "description": "Set & retrieve site-aware config values",
     "type": "craft-plugin",
-    "version": "1.0.0",
     "keywords": [
         "craft",
         "cms",
