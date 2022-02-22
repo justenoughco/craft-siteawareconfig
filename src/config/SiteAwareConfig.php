@@ -76,7 +76,7 @@ class SiteAwareConfig extends BaseObject
         return array_key_exists($name, $this->config);
     }
 
-    private function localized(string $name): mixed
+    private function localized(string $name)
     {
         return ConfigHelper::localizedValue($this->config[$name], $this->siteHandle);
     }
